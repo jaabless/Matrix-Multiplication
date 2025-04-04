@@ -40,7 +40,7 @@ public class Matrix_Multiplication {
         System.out.println("Enter elements of Matrix B:");
         for (int i = 0; i < numberOfRowsB; i++) {
             for (int j = 0; j < numberOfColumnsB; j++) {
-                matrixB[i][j] = scanner.nextInt();
+                matrixB[i][j] = scanner.nextInt();//accepts and creats matrix B
             }
         }
 
