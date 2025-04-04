@@ -4,11 +4,6 @@ import java.util.Scanner;
 
 public class Matrix_Multiplication {
     public static void main(String[] args){
-        /* a*p + b*r + c*t a*q + b*s + c*u
-         e*p + f*r + g*t  e*q + f*s + g*u
-         h*p + i*r + j*t  h*q + i*s + j*u
-         k*p + l*r + m*t  k*q + l*s + m*u
-         */
 
         // This is for Matrix A
         System.out.print("...Matrix Multiplication...\n");
@@ -31,7 +26,8 @@ public class Matrix_Multiplication {
         message = "Enter the number of rows for Matrix B: ";
         int numberOfRowsB = getValidInt(scanner,message); //accepts the number of rows for matrix B
         message ="Enter the number of columns for Matrix B: ";
-        int numberOfColumnsB = getValidInt(scanner,message); //accepts the number of columns for matrix B
+//        int numberOfColumnsB = getValidInt(scanner,message);
+        int numberOfColumnsB = getValidInt(scanner,message);//accepts the number of columns for matrix B
 
 
         // Check if matrix meets rules for multiplication (column of MatrixA must be equal to row of MatrixB)
@@ -89,13 +85,6 @@ public class Matrix_Multiplication {
         }
     }
 
-    // Method to fill a matrix with valid integers
-    private static void fillMatrix(Scanner scanner, int[][] matrix) {
-        for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < matrix[0].length; j++) {
-                matrix[i][j] = getValidInt(scanner, "Element [" + i + "][" + j + "]: ");
-            }
-        }
-    }
+
 
 }
